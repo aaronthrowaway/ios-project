@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="1jK-to-Fiw">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
+    </dependencies>
+    <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="0ry-ik-UIt">
+            <objects>
+                <tableViewController id="1jK-to-Fiw" customClass="LSTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="99" sectionHeaderHeight="10" sectionFooterHeight="10" id="Xs9-5N-yyP">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LSCell" rowHeight="100" id="pSR-P0-rfs" customClass="LSTableViewCell">
+                                <rect key="frame" x="0.0" y="46" width="320" height="102"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="10" y="1" width="300" height="99"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yGj-nM-GSn">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="76" id="hSt-Yb-Wi3"/>
+                                                <constraint firstAttribute="height" constant="85" id="o3d-D0-uos"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cbd-fP-yot">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="41" id="hIf-KY-cfa"/>
+                                                <constraint firstAttribute="height" constant="42" id="zhe-aa-frU"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84m-Pj-XWo">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="196" id="6UV-dQ-KIZ"/>
+                                                <constraint firstAttribute="height" constant="22" id="TJY-82-PGq"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="18"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyO-25-qRc">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="22" id="aGv-CK-j0O"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                            <color key="textColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4m-Dn-p6d">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="130" id="6nj-RT-z8m"/>
+                                                <constraint firstAttribute="height" constant="22" id="XFh-SZ-YmH"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="18"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="84m-Pj-XWo" firstAttribute="leading" secondItem="yGj-nM-GSn" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="BQK-NZ-E8N"/>
+                                    <constraint firstItem="Cbd-fP-yot" firstAttribute="bottom" secondItem="yGj-nM-GSn" secondAttribute="bottom" type="default" id="D9c-Db-E4M"/>
+                                    <constraint firstItem="eyO-25-qRc" firstAttribute="leading" secondItem="yGj-nM-GSn" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="HCa-Ad-cQI"/>
+                                    <constraint firstItem="i4m-Dn-p6d" firstAttribute="centerY" secondItem="Cbd-fP-yot" secondAttribute="centerY" type="default" id="QLG-J4-gpZ"/>
+                                    <constraint firstItem="84m-Pj-XWo" firstAttribute="leading" secondItem="pSR-P0-rfs" secondAttribute="leading" constant="101" id="QjT-hy-CEt"/>
+                                    <constraint firstItem="i4m-Dn-p6d" firstAttribute="leading" secondItem="Cbd-fP-yot" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="QnK-sB-D7p"/>
+                                    <constraint firstItem="84m-Pj-XWo" firstAttribute="trailing" secondItem="eyO-25-qRc" secondAttribute="trailing" type="default" id="TE3-Pt-vd9"/>
+                                    <constraint firstItem="84m-Pj-XWo" firstAttribute="top" secondItem="pSR-P0-rfs" secondAttribute="top" constant="8" id="Ypo-DX-S3a"/>
+                                    <constraint firstItem="Cbd-fP-yot" firstAttribute="leading" secondItem="yGj-nM-GSn" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="Z3C-qs-T0A"/>
+                                    <constraint firstItem="84m-Pj-XWo" firstAttribute="top" secondItem="yGj-nM-GSn" secondAttribute="top" type="default" id="o36-mY-wig"/>
+                                    <constraint firstItem="eyO-25-qRc" firstAttribute="top" secondItem="pSR-P0-rfs" secondAttribute="top" constant="26" id="rBK-uW-UUR"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="attrib" destination="eyO-25-qRc" id="ZTG-6u-pIx"/>
+                                    <outlet property="avatar" destination="Cbd-fP-yot" id="L4r-iw-ewL"/>
+                                    <outlet property="desc" destination="84m-Pj-XWo" id="J7s-w9-02H"/>
+                                    <outlet property="image" destination="yGj-nM-GSn" id="BXY-xr-0bz"/>
+                                    <outlet property="userName" destination="i4m-Dn-p6d" id="9EH-p7-0LU"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1jK-to-Fiw" id="QVR-Ki-GRz"/>
+                            <outlet property="delegate" destination="1jK-to-Fiw" id="McJ-Ax-tdt"/>
+                            <outletCollection property="gestureRecognizers" destination="7IM-Gg-60Y" appends="YES" id="FkF-JG-Cvl"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I1o-Fu-7AA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="7IM-Gg-60Y">
+                    <connections>
+                        <action selector="goToWebpage:" destination="1jK-to-Fiw" id="kSJ-DB-owE"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="103" y="102"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="LSTableViewCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LSTableViewCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="attrib" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="avatar" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="desc" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="image" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="userName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="usersName" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="LSTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LSTableViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
